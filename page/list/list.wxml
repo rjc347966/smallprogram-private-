@@ -1,0 +1,64 @@
+<view class="middle">
+    <view class="top">
+        <view catchtap="pageTab" class="tab {{tabMark.tabIndex==0? 'active': ''}}" data-mark="0">按人气</view>
+        <view catchtap="pageTab" class="tab {{tabMark.tabIndex==1? 'active': ''}}" data-mark="1">按距离</view>
+        <view catchtap="pageTab" class="tab {{tabMark.tabIndex==2? 'active': ''}}" data-mark="2">按价格</view>
+    </view>
+    <!--top end-->
+    <view class="content">
+        <view class="content-tab {{tabMark.contentIndex==0? 'show': 'hid'}}">
+            <scroll-view scroll-y="true" bindscrolltolower="pouplarSortLoadMore">
+                <view class="content-item" wx:for="{{popularSort.list}}" wx:key="id">
+                    <navigator url="../detail/detail?item_id={{item.item_id}}" open-type="navigate" hover-class="navigator-hover">
+                        <image src="{{item.image}}"></image>
+                        <view class="content-item-info">
+                            <text class="item-title">{{item.title}}</text>
+                            <text class="item-price">￥ {{item.price_min}}</text>
+                            <text class="item-name">{{item.venue}}</text>
+                            <view class="item-distance">{{item.distance}}</view>
+                        </view>
+                    </navigator>
+                </view>
+                <import src="../template/loadMore.wxml"/>
+                <template is="loadMore" data="{{...popularSort}}"/>
+            </scroll-view>
+        </view>
+        <!--content1 end-->
+        <view class="content-tab {{tabMark.contentIndex==1? 'show': 'hid'}}">
+            <scroll-view scroll-y="true" bindscrolltolower="distanceSortLoadMore">
+                <view class="content-item" wx:for="{{distanceSort.list}}" wx:key="id">
+                    <navigator url="../detail/detail?item_id={{item.item_id}}" open-type="navigate" hover-class="navigator-hover">
+                        <image src="{{item.image}}"></image>
+                        <view class="content-item-info">
+                            <text class="item-title">{{item.title}}</text>
+                            <text class="item-price">￥ {{item.price_min}}</text>
+                            <text class="item-name">{{item.venue}}</text>
+                            <view class="item-distance">{{item.distance}}</view>
+                        </view>
+                    </navigator>
+                </view>
+                <import src="../template/loadMore.wxml"/>
+                <template is="loadMore" data="{{...distanceSort}}"/> 
+            </scroll-view>
+        </view>
+        <!--content2 end-->
+        <view class="content-tab {{tabMark.contentIndex==2? 'show': 'hid'}}">
+            <scroll-view scroll-y="true" bindscrolltolower="priceSortLoadMore">
+                <view class="content-item" wx:for="{{priceSort.list}}" wx:key="id">
+                    <navigator url="../detail/detail?item_id={{item.item_id}}" open-type="navigate" hover-class="navigator-hover">
+                        <image src="{{item.image}}"></image>
+                        <view class="content-item-info">
+                            <text class="item-title">{{item.title}}</text>
+                            <text class="item-price">￥ {{item.price_min}}</text>
+                            <text class="item-name">{{item.venue}}</text>
+                            <view class="item-distance">{{item.distance}}</view>
+                        </view>
+                    </navigator>
+                </view>
+                <import src="../template/loadMore.wxml"/>
+                <template is="loadMore" data="{{...priceSort}}"/> 
+            </scroll-view>
+        </view>
+        <!--content3 end-->
+    </view>
+</view>

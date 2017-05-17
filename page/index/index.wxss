@@ -1,0 +1,58 @@
+/* page/index/index.wxss */
+.middle{
+    background-color: #fff;
+    padding: 60rpx 15rpx;
+    position: relative;
+    font-family: "PingFangSC-Regular";
+}
+.classify-box{
+    margin-bottom: 80rpx;
+}
+
+.classify-title{
+    border-left: 6rpx solid #010000;
+    margin-left: 15rpx;
+    padding: 0 15rpx;
+    font-size: 30rpx;
+    margin-bottom: 30rpx;
+}
+.classify-span{
+    width: 100%;
+    font-size: 0px;
+}
+.classify-span navigator{
+    display: inline-block;
+}
+.classify-span text{
+    display: inline-block;
+    margin-right: 15rpx;
+    margin-left: 15rpx;
+    margin-bottom: 15px;
+    width: 210rpx;
+    height: 68rpx;
+    font-size: 28rpx;
+    color: #646464;
+    background-color: #e7ecef;
+    line-height: 68rpx;
+    text-align: center;
+    vertical-align: middle;
+}
+.classify-all{
+    background: url(http://7xl7vd.com1.z0.glb.clouddn.com//smallprogram/arrow-bottom.png) no-repeat;
+    background-size: 28rpx;
+    background-position: center;
+    vertical-align: middle;
+}
+.classify-close{
+    background: url(http://7xl7vd.com1.z0.glb.clouddn.com//smallprogram/arrow-bottom.png) no-repeat;
+    transform:rotate(180deg);
+    background-size: 28rpx;
+    background-position: center;
+    vertical-align: middle;
+}
+.show{
+    display: inline-block !important;
+}
+.hid{
+    display: none !important;
+}

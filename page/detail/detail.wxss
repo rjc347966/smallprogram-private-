@@ -1,0 +1,158 @@
+/* page/index/index.wxss */
+/*总视图*/
+.allCss {
+    margin: 0px;
+    width: 100%;
+    position: relative;
+}
+
+/*滚动图*/
+.swiperCss {
+    height: 504rpx;
+}
+#img-count{
+    font-family: "PingFangSC-Regular";
+    text-align: center;
+    width: 100rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #fff;
+    font-size: 30rpx;
+    position: absolute;
+    top: 444rpx;
+    right: 0px;
+    z-index: 999;
+}
+/*标题视图*/
+.titleViewCss {
+    margin-top: 29px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 48rpx;
+    line-height: 48rpx;
+    font-family: "PingFangSC-Regular"
+}
+
+/*副标题视图*/
+.detailViewCss {
+    text-indent: 30rpx;
+    height: 40rpx;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 19px;
+    background: url(http://7xl7vd.com1.z0.glb.clouddn.com//smallprogram/local.png) no-repeat;
+    background-size: 20rpx 28rpx;
+    background-position:0px center;
+    font-family: "PingFangSC-Regular";
+    font-size: 28rpx;
+    color: #888888;
+    line-height: 40rpx;
+}
+
+/*内容视图*/
+.contentViewCss {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 44px;
+    color: #353535;
+    line-height: 48rpx;
+    font-size: 30rpx;
+    font-family: "PingFangSC-Regular";
+    padding-bottom: 44px;
+}
+
+/*属性总视图*/
+.propertyViewCss {
+    background-color: #E7EDEF;
+}
+
+/*属性text*/
+.propertyTextCss {
+    font-size: 28rpx;
+    line-height: 58rpx;
+    font-family: "PingFangSC-Regular";
+}
+
+/*地址text*/
+.addressTextCss {
+    margin-left: 19px;
+    font-size: 28rpx;
+    line-height: 58rpx;
+    color: #44C4D6;
+    font-family: "PingFangSC-Regular";
+}
+
+/*地址视图*/
+.addressViewCss {
+    /*background-color: red;*/
+    padding-top: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*时间视图*/
+.timeViewCss {
+    padding-left: 15px;
+    padding-right: 15px;
+    /*background-color: green;*/
+}
+
+/*电话视图*/
+.phoneViewCss {
+    /*background-color: red;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 24px;
+}
+
+ /*时间和电话text*/
+.timeAndPhoneTextCss {
+    font-size: 28rpx;
+    line-height: 58rpx;
+    font-family: "PingFangSC-Regular";
+    margin-left: 19px;
+}
+
+/*广告view*/
+.intoAdvCss {
+    background-color: #353535;
+    height: 130rpx;
+    line-height: 130rpx;
+    text-align: center;
+}
+
+/*广告文字*/
+.intoAdvTextCss {
+    opacity: 0.5;
+    color: #FFFFFF;
+    font-family: "PingFangSC-Regular";
+    font-size: 28rpx;  
+}
+#collect{
+    width: 90rpx;
+    height: 90rpx;
+    background: url(http://7xl7vd.com1.z0.glb.clouddn.com//smallprogram/collect.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: fixed;
+    top: 1000rpx;
+    left: 30rpx;
+    z-index: 999;
+}
+#backToIndex{
+    font-family: "PingFangSC-Regular";
+    font-size: 30rpx;
+    width: 200rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: #fff;
+    background-color: #45c4d7;
+    border-top-left-radius: 90rpx;
+    border-bottom-left-radius: 90rpx;
+    position: fixed;
+    top: 1000rpx;
+    right: 0px;
+    z-index: 999;
+}

@@ -1,0 +1,57 @@
+<!--page/index/index.wxml-->
+<view class="allCss">
+    <!--滚动图-->
+    <swiper class="swiperCss" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{imgUrls}}">
+            <swiper-item>
+            <image src="{{item}}" mode="widthFix" class="slide-image" style="width:{{windowWidth}}px; "/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view id="img-count">{{imgCount}}张</view>
+    <!--标题view-->
+    <view class="titleViewCss">
+        <text>{{titleText}}\n</text>
+    </view>
+
+    <!--副标题view-->
+    <view class="detailViewCss">
+        <text>{{detailTitleText}}\n</text>
+    </view>
+
+    <!--内容view-->
+    <view class="contentViewCss">
+        <text>{{contentText}}\n</text>
+    </view>
+
+    <!--属性view-->
+    <view class="propertyViewCss">
+
+        <!--地址view-->
+        <view class="addressViewCss">
+            <text class="propertyTextCss">地址</text>
+            <text class="addressTextCss">{{address}}</text>
+        </view>
+
+        <!--时间view-->
+        <view class="timeViewCss">
+            <text class="propertyTextCss">时间</text>
+            <text class="timeAndPhoneTextCss">{{time}}</text>
+        </view>
+
+        <!--电话view-->
+        <view class="phoneViewCss">
+            <text class="propertyTextCss">电话</text>
+            <text class="timeAndPhoneTextCss">{{phone}}</text>
+        </view>
+
+    </view>
+
+    <view id="collect"></view>
+    <view id="backToIndex" bindtap="backToIndex">返回首页</view>
+    <!--广告-->
+    <view class="intoAdvCss">
+        <text class="intoAdvTextCss">本篇内容来自into App</text>
+    </view>
+</view>

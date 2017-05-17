@@ -1,0 +1,107 @@
+.middle{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.show{
+    display: block !important;
+}
+.hid{
+    display: none !important;
+}
+.top{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 121rpx;
+    z-index: 99;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.tab{
+    color: #b2b2b2;
+    font-size: 30rpx;
+    height: 86rpx;
+    line-height: 86rpx;
+    border-bottom: 5rpx solid #fff;
+    width: 100rpx;
+    text-align: center;
+}
+.active{
+    color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+.content{
+    padding: 121rpx 0;
+}
+.content-tab scroll-view{
+    height: 1150rpx;
+}
+.content-item{
+    padding: 0px 15px;
+    width: 100%;
+    /*height: 200rpx;*/
+    box-sizing: border-box;
+    font-size: 0px;
+    margin-bottom: 10px;
+}
+.content-item{
+    margin-bottom: 10px;
+}
+.content-item image{
+    width: 290rpx;
+    height: 200rpx;
+    margin-right: 30rpx;
+}
+.content-item-info{
+    display: inline-block;
+    width: calc(100% - 320rpx);
+    height: 200rpx;
+    position: relative;
+}
+.content-item-info text{
+    display: block;
+}
+.item-title{
+    color: #000;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    height: 80rpx;
+    margin-bottom: 48rpx;
+}
+.item-price{
+    color: #44c4d6;
+    font-size: 28rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    margin-bottom: 20rpx;
+}
+.item-name{
+    width: 70%;
+    font-size: 24rpx;
+    color: #353535;
+    line-height: 24rpx;
+    background: url(http://7xl7vd.com1.z0.glb.clouddn.com//smallprogram/local.png) no-repeat;
+    background-size: auto 24rpx;
+    background-position: 0px center;
+    text-indent: 27.5rpx;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.item-distance{
+    font-size: 24rpx;
+    color: #353535;
+    width: 30%;
+    text-align: right;
+    height: 24rpx;
+    line-height: 24rpx;
+    position: absolute;
+    right: 0rpx;
+    bottom: 0px;
+}

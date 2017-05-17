@@ -1,0 +1,15 @@
+<!--page/index/index.wxml-->
+<view class="middle">
+    <view class="classify-box" wx:for="{{classify}}" wx:key="id" wx:for-item="outside">
+        <view class="classify-title">
+            {{outside.classifytitle}}
+        </view>
+        <view class="classify-span">
+        <navigator  open-type="navigate" hover-class="none" wx:for="{{outside.classifyspan}}"  wx:key="id" wx:for-item="classifyspan" url="../list/list?tags={{outside.classifytitle}}-{{classifyspan}}">
+             <text>{{classifyspan}}</text>
+        </navigator>
+            <text class="classify-all {{btnMark[index]==1? 'show': 'hid'}}" wx:if="{{outside.classifyspan.length >= 8}}" bindtap="showAll" data-id="{{index}}"></text>
+        <text class="classify-close {{btnMark[index]==0? 'show': 'hid'}}" wx:if="{{outside.classifyspan.length >= 8}}" bindtap="closeAll" data-id="{{index}}"></text>
+        </view>
+    </view>
+</view>

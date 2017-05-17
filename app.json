@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/list/list",
+    "page/detail/detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "上海小资美食"
+  }
+}
